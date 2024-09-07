@@ -10,14 +10,14 @@
 <body>
     <nav class="navegador">
         <div class="logo">
-            <a href="index.html">PORTFOLIO</a>
+            <a href="index.html">PORTFOLIO - JMN</a>
         </div>
         <ul class="navegador-links">
-            <li><a href="#pagina-inicial">PÁGINA INICIAL</a></li>
-            <li><a href="#sobre-mim">SOBRE MIM</a></li>
-            <li><a href="#habilidades">HABILIDADES</a></li>
-            <li><a href="#projectos">PROJECTOS</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#pagina-inicial">Página inicial</a></li>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projectos">Projectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
@@ -29,7 +29,7 @@
                         <span role="img" aria-label="Saudações!">👋</span> Saudações!
                     </div>
                     <h3>Eu sou,</h3>
-                    <h2 class="nome">Milton</h2>
+                    <h2 class="nome">João</h2>
                     <h1>Nhavene</h1>
                     <p class="subtitle">Desenvolvedor Front-end</p>
                     <div class="icons">
@@ -47,8 +47,13 @@
             </div>
         
             <div class="button">
-                <button class="cv">Baixar CV</button>
-                <button class="conversar"><i class="fa-brands fa-whatsapp"></i> Vamos conversar</button>
+                <button class="cv">
+                    <a href="files/CV .pdf" class="download-btn" download="CV.pdf">Baixar CV</a>
+                </button>
+                
+                <button class="conversar"><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/+258866037709" target="_blank" class="chat">
+                    Vamos conversar
+                </a></button>
             </div>
 
         </section>
@@ -122,39 +127,26 @@
         </div>
     </section>
 
-    <section id="contacto" class="section-contacto active">
-        <div class="cont">
-            <div class="container-contact">
-                <h2>Contacto</h2>
-                <div class="icons-contact">
-                    <p>Entre em contato comigo pelas redes sociais ou e-mail...</p>
-                    <div class="social-media">
-                        <div class="soci-media" key="9">
-                            <p>Whatsapp</p>
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
-                        <div class="soci-media" key="10">
-                            <p>Instragram</p>
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                        <div class="soci-media" key="11">
-                            <p>linkedin</p>
-                            <i class="fa-brands fa-linkedin"></i>
-                        </div>
-                        <div class="soci-media" key="12">
-                            <p>Facebook</p>
-                            <i class="fa-brands fa-facebook"></i>
-                        </div>
-                    </div>
-
-                    
-                    <div class="mail">
-
-                    </div>
-                </div>
+    <section id="contacto" class="section-contacto">
+        <div class="contactar">
+            <div class="formulario">
+                <h3>Entre em contato</h3>
+                <form class="contact-form">
+                    <input type="text" name="name" id="name" autocomplete="off" placeholder="nome">
+                    <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
+                    <textarea name="msg" id="msg" placeholder="mensagem" autocomplete="off"></textarea>
+                    <button type="submit" class="form-submit-btn">contactar</button>
+                </form>
+            </div>
+            <div class="media-social">
+                <ul class="socials">
+                    <li><a class="fa-brands fa-x-twitter"></a></li>
+                    <li><a class="fa-brands fa-facebook"></a></li>
+                    <li><a class="fa-brands fa-linkedin"></a></li>
+                </ul>
             </div>
         </div>
     </section>
-
+        
 </body>
 </html>

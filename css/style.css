@@ -2,8 +2,9 @@ body{
     margin: 20px;
     padding: 5px;
     height: 100%;
-    color: #ffffff;
-    background-color: #090E16;
+    color: #7B4AE2;
+    background-color: rgba(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navegador{
@@ -14,7 +15,7 @@ body{
     left: 0;
     display: flex;
     margin: 0;
-    background-color: #0f1120;
+    background-color: rgba(0, 0, 0);
     justify-content: space-between;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     padding: 0px;
@@ -48,7 +49,7 @@ body{
 }
 
 .navegador-links li{
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -94,13 +95,14 @@ body{
 }
 
 .badge{
-    background-color: #7B4AE2;
     padding: 10px 20px;
     border-radius: 20px;
     margin-bottom: 20px;
     display: inline-block;
     color: #ffffff;
     font-weight: bold;
+    font-size: 1.3em;
+    
 }
 
 .informacao span{
@@ -126,7 +128,7 @@ body{
 }
 
 .subtitle{
-    font-size: 1.4em;
+    font-size: 1.6em;
     color: #b3b3b3;
     margin: 10px 0px 20px 20px;
 }
@@ -159,7 +161,7 @@ body{
     border-radius: 50%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     margin-right: 50px;
-    max-width: 480px;
+    max-width: 380px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -175,23 +177,28 @@ body{
     height: 50px;
     background-color: #0F1120;
     border-radius: 50px;
-    color: white;  
     font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     margin-right: 0px;
-    font-size: 1em;
     transition: background-color 0.3s ease; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.download-btn{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white; 
+}
+
 
 .conversar{
     margin: 30px 70px;
     padding: 10px 14px;
     background-color: #0f1120;
     border-radius: 50px;
-    color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 190px;
@@ -200,12 +207,20 @@ body{
     align-items: center;
     justify-content: center;
     margin-right: 0px;
-    font-size: 1em;
+}
+
+.chat{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+    color: white;
 }
 
 .conversar i{
     width: auto;
-    margin-right: 10px;
+    margin-right: 5px;
+    color: white;
+    font-size: 20px;
 
 }
 
@@ -438,50 +453,80 @@ body{
 }
 
 #contacto{
-    padding-top: 50px;
-    margin: 10rem 0 0rem 0;
+    margin: 10rem 0 0px 0;
 }
 
-.section-contacto :active{
-    transform: translate(0);
-    opacity: 1;
-}
-
-.section-contacto{
-    transition: 0.5s;
-}
-
-.cont{
-    margin-right: auto;
-    margin-left: auto;
-    width: 90%;
-}
-
-.container-contact{
-    align-items: center;
-    text-align: center;
+.formulario{
+    display: grid;
     justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 90%;
-    
-}
-
-.container-contact h2{
-    font-size: 3.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    margin-bottom: 5rem;
-    font-size: 3.5rem;
-    margin-top: 7rem;
+    align-items: center;
 }
 
-.cont{
+.formulario h3{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.media-social{
     padding: 0;
-    border: 0;
-    margin: 0px 100px 0px 100px;
-    align-items: center;
+    margin: 0px 0px 35px 0px;
+  }
+
+.socials {
+    gap: 25px;
+    cursor: pointer;
     justify-content: center;
+    display: flex;
+    list-style: none;
+  }
+
+.socials a {
+    font-size: 40px;
+  }
+
+.socials a:hover{
+    color: white;
+  }
+
+  .contact-form{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 60%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #7B4AE2;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+#msg{
+    height: 100px;
+    resize: none;
+    font-family: sans-serif;
+}
+
+.form-submit-btn{
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    display: block;
+    margin: auto;
+    border: 1px solid #7B4AE2;
+    border-radius: 30px;
+    cursor: pointer;
 }
