@@ -41,6 +41,13 @@ body{
     color: #ffffff;
 }
 
+.menu-hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
 .navegador-links{
     list-style-type: none;
     display: flex;
@@ -83,7 +90,7 @@ body{
     display: flex;
     align-items: center;
     justify-content:space-around;
-    max-width: 1300px;
+    max-width: 1020px;
     width: 100%;
     padding: 20px;
 }
@@ -105,22 +112,22 @@ body{
     
 }
 
-.informacao span{
+.info span{
     margin: 5px 5px 0px 0px;
 }
 
-.info h3{
+.dados h3{
     margin: 5px 0px 45px 0px;
     font-size: 1.5rem;
 }
 
-.info h2{
+.dados h2{
     margin: 0px 20px 25px 20px;
     font-size: 4.5rem;
     line-height: 1.1rem;
 }
 
-.info h1{
+.dados h1{
     margin: 0px 0px 15px 20px;
     font-size: 5rem;
     line-height: 1.2em;
@@ -229,7 +236,6 @@ body{
     color: white;
 }
 
-
 .sobre{
     justify-content: center;
     text-align: center;
@@ -254,7 +260,6 @@ body{
     display: flex;
     gap: 50px;
     margin-bottom: 40px;
-    
 }
 
 .descricao-sobremim p{
@@ -302,8 +307,6 @@ body{
     justify-content: space-between;
     margin-bottom: 30px;
 }
-
-
 
 #habilidades{
     margin: 2.5rem 0 0rem 0;
@@ -578,4 +581,232 @@ body{
     border: 1px solid #7B4AE2;
     border-radius: 30px;
     cursor: pointer;
+}
+
+/* Pagina inicial*/
+@media screen and (max-width: 768px) {
+    /*Cabeçalho */
+    .logo{
+        cursor: none;
+        margin-left: 25px;
+    }
+
+    .logo a{ 
+        margin: 20px 10px 15px 0px;
+        font-size: 1.3rem;
+    }
+
+
+    .navegador{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navegador-links{
+        flex-direction: column;
+        margin-right: 0;
+        display: none;
+    }
+
+    /*Secção principal */
+    .container-main{
+        margin-top: 280px;
+    }
+
+    .section-main{
+        margin-right: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .badge{
+        margin-bottom: 20px;
+        font-size: 1.1em;   
+    }
+
+    .dados h3{
+        margin: 5px 0px 45px 0px;
+        font-size: 1.5rem;
+    }
+    
+    .dados h2{
+        margin: 0px 20px 25px 20px;
+        font-size: 3rem;
+        line-height: 1.1rem;
+    }
+    
+    .dados h1{
+        margin: 0px 0px 15px 20px;
+        font-size: 3.5rem;
+        line-height: 1.2em;
+        color: #7B4AE2;
+    }
+    
+    .subtitle{
+        font-size: 1.3em;
+    }
+    
+    .icons i {
+       width: 30px;
+       font-size: 35x;
+       cursor: none;
+       margin: 5px 5px 15px 0px;
+    }
+
+    .image-container img{
+        margin-left: 25px;
+        margin-right: 0px;
+        max-width: 280px;
+    }
+
+    .image-container img:hover{
+        transform: none;
+    }
+    
+    .button{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 40px;
+        flex-direction: column;
+    }
+}
+
+/* Sobre mim*/
+@media screen and (max-width: 768px) {
+    .sobre{
+        margin-left: 0;
+        padding-top: 120px;
+    }
+    
+    .container-sobremim h2{ 
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 85px;
+        margin-right: 85px;
+        font-size: 2rem;
+    }
+    
+    .descricao-sobremim{
+        flex-direction: column;
+    }
+    
+    .descricao-sobremim p{
+        font-size: 1em;
+        margin-right: 0;
+        line-height: 2;
+    }
+    
+    .descricao-sobremim img{
+        margin-left: 70px;
+        width: 200px;
+    }
+
+    .educacao h3 {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .education {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .education1, .education2 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .education1 div, .education2 div {
+        margin-bottom: 10px;
+    }
+}
+
+@media  screen and (max-width:768px) {
+    #habilidades .habi {
+        margin: 70px 20px; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-habilidades h2 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+
+    #habilidades .habi .container-habilidades .cards {
+        gap: 2.5rem; 
+        width: 100%;
+    }
+
+    .box {
+        width: 100%; 
+        max-width: 115px; 
+        margin-bottom: 10px;
+        aspect-ratio: 1; 
+        border: 1px solid aliceblue;
+    }
+
+    .box i {
+        font-size: 2.5rem; 
+    }
+
+    .box p {
+        font-size: 1.2rem; 
+        font-weight: bold;
+    }
+
+    .box:hover{
+        transform: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #projectos{
+        padding-top: 10px;
+        margin: 5rem 0 0rem 0;
+    }
+
+    .box-projects img{
+        width: 280px;
+        cursor: none;
+        border-radius: 40px;
+    }
+    
+    .box-projects img:hover{
+        transform: none;
+    }
+
+    .descricao-projects{
+        cursor: none;
+        margin-top: 75px;
+    }
+
+    .cards-projects{
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #contacto{
+        margin: 5rem 0 0px 0;
+    }
+    
+    .socials {
+        margin-top: 15px;
+        margin-right: 25px;
+        cursor: none;
+      }
 }
