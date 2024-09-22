@@ -90,7 +90,7 @@ body{
     display: flex;
     align-items: center;
     justify-content:space-around;
-    max-width: 1020px;
+    max-width: 1300px;
     width: 100%;
     padding: 20px;
 }
@@ -112,22 +112,22 @@ body{
     
 }
 
-.info span{
+.informacao span{
     margin: 5px 5px 0px 0px;
 }
 
-.dados h3{
+.info h3{
     margin: 5px 0px 45px 0px;
     font-size: 1.5rem;
 }
 
-.dados h2{
+.info h2{
     margin: 0px 20px 25px 20px;
     font-size: 4.5rem;
     line-height: 1.1rem;
 }
 
-.dados h1{
+.info h1{
     margin: 0px 0px 15px 20px;
     font-size: 5rem;
     line-height: 1.2em;
@@ -200,7 +200,6 @@ body{
     color: white; 
 }
 
-
 .conversar{
     margin: 30px 70px;
     padding: 10px 14px;
@@ -247,7 +246,6 @@ body{
     gap: 15px;
 }
 
-
 .container-sobremim h2{ 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 40px;
@@ -269,7 +267,6 @@ body{
     color: #b3b3b3;
     line-height: 2;
 }
-
 
 .descricao-sobremim img{
     border: 5px solid #7B4AE2;
