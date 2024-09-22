@@ -533,6 +533,7 @@ body{
 
 .socials a {
     font-size: 40px;
+    text-decoration: none;
   }
 
 .socials a:hover{
@@ -589,10 +590,9 @@ body{
     }
 
     .logo a{ 
-        margin: 20px 10px 15px 0px;
-        font-size: 1.3rem;
+        margin: 15px 10px 15px 0px;
+        font-size: 1.4rem;
     }
-
 
     .navegador{
         flex-direction: column;
@@ -608,7 +608,7 @@ body{
 
     /*Secção principal */
     .container-main{
-        margin-top: 280px;
+        margin-top: 250px;
     }
 
     .section-main{
@@ -620,7 +620,13 @@ body{
 
     .badge{
         margin-bottom: 20px;
-        font-size: 1.1em;   
+        font-size: 1.3em; 
+        font-weight: bold;  
+    }
+
+    .dados{
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 
     .dados h3{
@@ -629,7 +635,7 @@ body{
     }
     
     .dados h2{
-        margin: 0px 20px 25px 20px;
+        margin: 0px 20px 25px 15px;
         font-size: 3rem;
         line-height: 1.1rem;
     }
@@ -647,9 +653,9 @@ body{
     
     .icons i {
        width: 30px;
-       font-size: 35x;
+       font-size: 30x;
        cursor: none;
-       margin: 5px 5px 15px 0px;
+       margin: 5px 15px 25px 10px;
     }
 
     .image-container img{
@@ -668,12 +674,31 @@ body{
         margin-right: 40px;
         flex-direction: column;
     }
+
+    .cv{
+        margin: 30px 90px;
+        width: 160px;
+        height: 70px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: none;
+        margin-right: 0px;
+    }
+    
+    .conversar{
+        cursor: none;
+        width: 200px;
+        height: 70px;
+        margin-right: 0px;
+    }
 }
 
 /* Sobre mim*/
 @media screen and (max-width: 768px) {
     .sobre{
-        margin-left: 0;
+        margin-left: 20px;
         padding-top: 120px;
     }
     
@@ -806,4 +831,197 @@ body{
         margin-right: 25px;
         cursor: none;
       }
+}
+
+@media screen and (min-width: 769px) and  (max-width: 1024px) {
+    .navegador-links {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .container-main {
+        margin-top: -80px;
+    }
+
+    .section-main {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .image-container img {
+        max-width: 220px;
+        margin-right: 0;
+    }
+
+    .badge{
+        margin-bottom: 20px;
+        font-size: 1.5em; 
+        font-weight: bold; 
+    }
+
+    .dados{
+        margin-right: 10px;
+    }
+
+    .dados h3{
+        margin: 5px 120px 45px 0px;
+        font-size: 1.8rem;
+    }
+    
+    .dados h2{
+        margin: 0px 80px 25px 15px;
+        font-size: 3rem;
+        line-height: 1.1rem;
+    }
+    
+    .dados h1{
+        margin: 0px 30px 15px 20px;
+        font-size: 3.5rem;
+        line-height: 1.2em;
+        color: #7B4AE2;
+    }
+    
+    .subtitle{
+        font-size: 1.4em;
+    }
+    
+    .icons i {
+       width: 30px;
+       font-size: 30x;
+       cursor: none;
+       margin: 5px 15px 25px 10px;
+    }
+
+    .image-container img:hover{
+        transform: none;
+    }
+    
+    .button{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 40px;
+        flex-direction: column;
+    }
+
+    .sobre {
+        margin-left: 0;
+        padding: 0;
+        margin-top: -120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .container-sobremim h2 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .descricao-sobremim {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .descricao-sobremim p{
+        font-size: 1.2rem;
+        margin-right: 0;
+        line-height: 2;
+    }
+    
+    .descricao-sobremim img{
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    .educacao h3 {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .education {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .education1, .education2 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .education1 div, .education2 div {
+        margin-bottom: 10px;
+    }
+
+    #habilidades .habi {
+        margin: 50px 20px;
+        align-items: center;
+    }
+
+    .container-habilidades h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 15px;
+        border: 1px solid #7B4AE2;
+    }
+
+    #projectos {
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .cards-projects {
+        gap: 3rem;
+    }
+
+    .box-projects img {
+        width: 250px;
+    }
+    
+
+    .descricao-projects {
+        cursor: none;
+        margin-top: 80px;
+    }
+
+    .box-projects img:hover{
+        transform: none;
+    }
+
+    .box:hover{
+        transform: none;
+    }
+
+    #contacto {
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    .socials {
+        margin-top: 20px;
+    }
+
+    .form-submit-btn {
+        padding: 10px 20px;
+    }
 }
